@@ -13,5 +13,6 @@ export default async function getRepos(orgOrUser){
 
    }catch(e){
       console.error('fetch error: ', e);
+      return []
    }
 }
