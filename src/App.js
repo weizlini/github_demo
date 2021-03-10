@@ -9,7 +9,10 @@ function App() {
     setSearch(e.target.value)
   }
   const searchRepos = async ()=>{
-    const results = await getRepos(search);
+    if(search) {
+      const results = await getRepos(search);
+      setResults(results)
+    }
   }
   return (
     <div className="container">
