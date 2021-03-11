@@ -20,6 +20,12 @@ function App() {
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
   };
+  const handleKeyUp = (e) => {
+    if (e.key === "Enter") {
+      e.target.blur();
+      searchRepos();
+    }
+  };
   const searchRepos = async () => {
     if (search) {
       setQuery(search);
@@ -38,8 +44,13 @@ function App() {
           <div className="title col-sm-4 col-xs-12">Github Repo Lister</div>
           <div className="search-ui col-sm-8 col-xs-12">
             <div className="search-field-container">
-              <i className="bi bi-search"></i>
-              <input type="text" value={search} onChange={handleSearchChange} />
+              <i className="bi bi-search" />
+              <input
+                type="text"
+                value={search}
+                onChange={handleSearchChange}
+                onKeyUp={handleKeyUp}
+              />
             </div>
             <button className="search-button" onClick={searchRepos}>
               Search
@@ -55,7 +66,7 @@ function App() {
         )}
         {query && results.length ? (
           <div className="results-sort">
-            <label>Sort By</label>
+            <label>Sort</label>
             <button
               className={sortAlpha ? "selected" : ""}
               onClick={() => {
@@ -104,6 +115,11 @@ function App() {
               ))}
             </>
           ) : null}
+          {query && !results.length && (
+            <div className="search-hint">
+              <i className="bi bi-search" /> No Results
+            </div>
+          )}
         </div>
       </div>
     </div>
