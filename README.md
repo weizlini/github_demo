@@ -1,6 +1,6 @@
-#Github repo list react demo
+# Github repo list react demo
 
-##Notes
+## Notes
 - The app was done really basically as a single page. Normally i would take the time to breakdown
 the markup into separate components and propagate props, or use some kind of state management tool.The app just seemed a little bit too basic to bother with breaking things down into components.
 - I used bootstrap css for the cards and a responsive grid. 
