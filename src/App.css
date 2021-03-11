@@ -38,4 +38,76 @@
   flex-grow:1;
   margin-left:5px;
 }
+.search-hint{
+  color:#ddd;
+  text-align:center;
+  padding:2em 20%;
+  font-size:48px;
+
+}
+.results-title{
+  margin:2em 0 0.5em;
+  font-size:24px;
+  color:#888;
+}
+.results-sort{
+  display:flex;
+  justify-content: flex-start;
+}
+.results-sort button{
+  border:1px solid #ccc;
+  height:20px;
+  font-size:12px;
+}
+.results-sort button.selected{
+  background:#fff;
+  color:#000;
+}
+.results-sort label{
+  font-size:16px;
+  color:#999;
+  padding:0 2em 0 0;
+}
+.results-sort button:first-child{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+}
+.results-sort button:last-child{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.results-container{
+  margin:1em 5%;
+}
+.results-view{
+  margin-top:1em;
+}
+.results-view .card {
+  box-shadow:2px 2px 15px 5px rgba(0,0,0,0.1);
+  margin-bottom:1em;
+}
+
+.results-view .card em {
+  color:#999;
+  font-size:14px;
+  display:block;
+  text-align:center;
+}
+.results-view .card-text {
+  margin-top:0.5em;
+  height:120px;
+  overflow-y:auto;
+}
+
+.results-view .card-title{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x:hidden;
+}
+.results-view .card-subtitle{
+  color:#ccc;
+  font-size:14px;
+}
+
 
