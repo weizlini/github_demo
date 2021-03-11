@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+#Github repo list react demo
+
+##Notes
+- The app was done really basically as a single page. Normally i would take the time to breakdown
+the markup into separate components and propagate props, or use some kind of state management tool.The app just seemed a little bit too basic to bother with breaking things down into components.
+- I used bootstrap css for the cards and a responsive grid. 
+- I used bootstrap icons just for the search magnifying glass. When I was 4 i used to call it a "mightyfying glass"
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
